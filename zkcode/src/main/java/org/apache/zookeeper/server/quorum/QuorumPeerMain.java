@@ -99,6 +99,9 @@ public class QuorumPeerMain {
         QuorumPeerConfig config = new QuorumPeerConfig();
         if (args.length == 1) {
             config.parse(args[0]);
+        }else {
+        	//just for test !!!
+        	args = new String[] {"./target/classes/zoo.cfg"};
         }
 
         // Start and schedule the the purge task
